@@ -1,21 +1,17 @@
-import React, { Component } from 'react';
-import Header from '../common/Header';
-import PropTypes from 'prop-types';
+import React, { Component } from "react";
+import Header from "../common/Header";
+import { Route } from "react-router-dom";
+import HomePage from "../components/HomePage";
 
-// The parent component renders the Header component and component(s) in the
-// route the user navigates to.
 class App extends Component {
   render() {
     return (
       <div className="container-fluid text-center">
         <Header />
-        {this.props.children}
+        <Route exact path="/" component={HomePage} />
       </div>
     );
   }
 }
-App.propTypes = {
-  children: PropTypes.object.isRequired
-};
 
 export default App;
