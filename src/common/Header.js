@@ -1,12 +1,12 @@
 import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { Link, IndexLink } from 'react-router';
 
 const Header = () => (
   <div className="text-center">
     <nav className="navbar navbar-default">
-      <NavLink exact to="/" activeClassName="active">Home</NavLink>
-      {"|"}
-      <Link to="library" sactiveClassName="active">library</Link>
+      <IndexLink to="/" activeClassName="active">Home</IndexLink>
+      {" | "}
+      <Link to="library" activeClassName="active">Library</Link>
     </nav>
   </div>
 );
