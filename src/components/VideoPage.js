@@ -14,6 +14,7 @@ const VideosPage = ({ videos, onHandleSelectVideo, selectedVideo }) => (
 			</div>
 		</div>
 		<div />
+		<div />
 		<div className="video-thumbnail">
 			{videos.map((video, i) => (
 				<div key={i} onClick={onHandleSelectVideo.bind(this, video)}>
